@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'YOUR_ANALYTICS_ID');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Smith Portfolio</title>
+    <title>Max Smith | Film & Football Blog Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="assets/me.png" alt="Max Smith" class="profile-pic">
-        <h1>Max Smith Film and Football Blogs</h1>
+    <header class="header-theme">
+        <div class="header-content">
+            <img src="assets/me.png" alt="Max Smith" class="profile-pic">
+            <h1>Max Smith</h1>
+            <p>Passionate Writer on Film and Football</p>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#writing">Film</a></li>
-                <li><a href="#projects">Football</a></li>
+            <ul class="nav-links">
+                <li><a href="#writing">Film Blogs</a></li>
+                <li><a href="#projects">Football Blogs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="writing">
-            <h2>Film Blogs</h2>
-            <div id="writing-container"></div>
+        <section id="writing" class="blog-section">
+            <div class="section-header">
+                <img src="assets/film-icon.png" alt="Film Icon" class="section-icon">
+                <h2>Film Blogs</h2>
+            </div>
+            <div id="writing-container" class="blog-container"></div>
         </section>
-        <section id="projects">
-            <h2>Football Blogs</h2>
-            <div id="projects-container"></div>
+
+        <section id="projects" class="blog-section">
+            <div class="section-header">
+                <img src="assets/football-icon.png" alt="Football Icon" class="section-icon">
+                <h2>Football Blogs</h2>
+            </div>
+            <div id="projects-container" class="blog-container"></div>
         </section>
     </main>
+
     <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">max.smith1@hotmail.co.uk</a></p>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to discuss your favorite films or football matches!</p>
+            <p>Email: <a href="mailto:max.smith1@hotmail.co.uk">max.smith1@hotmail.co.uk</a></p>
         </section>
+        <p>&copy; 2025 Max Smith. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
